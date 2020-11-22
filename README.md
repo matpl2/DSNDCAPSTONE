@@ -26,7 +26,7 @@ Data analysis was executed in a Jupyter notebook that operates on Python 3 Kerne
 * numpy - https://numpy.org/
 * pandas - https://pandas.pydata.org/
 * pyplot - https://matplotlib.org/api/pyplot_api.html
-* sklearn modules: linelar_model, r2_score, model_selection - https://scikit-learn.org/stable/
+* sklearn modules: sklearn.cluster, sklearn.decomposition, sklearn.preprocessing - https://scikit-learn.org/stable/
 * seaborn - https://seaborn.pydata.org/
 
 
