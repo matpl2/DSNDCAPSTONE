@@ -8,14 +8,16 @@ Purpose of this project is to write a blog that will be supported by data scienc
   - licence file.
   - data.zip - zip file with data json files used in this exercise.
  
+## Data
+Data is avialable in the zip file attached to this project.
+
 ## Purpose and intent
-Dataset is available here: https://www.kaggle.com/airbnb/seattle/data. Purpose of this excercise is to find answer to 3 questions (provide 3 insights):
+Purpose of this excercise is to find answer to 2 questions (provide 2 insights):
 
-Question 1 - Does cleaning fee impact cleanliness that was assessed by visitors in the review scores cleanliness rank?
+1. Identify several groups of customers (clusters) and relation of these groups to the promotion?
+Each Starbucks customer responds differently to offered promotions. First task therefore would be to group customers pools based on their responses and demography info. KMeans algorithm will be used to group these people.
 
-Question 2 - Does the host tenure on AirBnB impact the accuracy of property description?
-
-Question 3 - Which areas of Seattle get the best scores on the location?
+2. What can be recommended to the marketing team based on analysis above?
 
 
 ## Code
@@ -27,17 +29,10 @@ Data analysis was executed in a Jupyter notebook that operates on Python 3 Kerne
 * sklearn modules: linelar_model, r2_score, model_selection - https://scikit-learn.org/stable/
 * seaborn - https://seaborn.pydata.org/
 
-For the purpose of this excercise I have created two functions: removecharacter and movetodtype.
-Specification of these functions are:
-
-removecharacter  - This function removes string [a] in colum names [cols] provided as a list for a given panda dataframe [df]. cols must be provided as a list in form ['a','b','c'].
-
-movetodtype  - This function convert to given format [form] any colum names [cols] provided as a list for a given panda dataframe [df]. cols must be provided as a list in form ['a','b','c'] while form needs to be valid pandas data type like 'str' or 'float64'.
 
 ## Analytics Process
 Process outlied in the Project file follows CRISP-DM Process (Cross Industry Process for Data Mining). You can see inside the file that multiple steps were taken to prepare data: drop nan values, change data types, or remove special characters from the data. File was documented with comments therefore each step has instruction associated with it. 
 
 ## Outcome of the analysis
-Analysis has provded answer to 3 business questions. You are encuraged to dive more into the dataset. More details can be found in my post:
+Analysis has provded answer to 2 business questions. You are encuraged to dive more into the dataset. More details can be found in my medium post.
 
-https://medium.com/@matploskonka/airbnb-and-seattle-what-can-you-get-from-this-match-a6c813baa3c7
